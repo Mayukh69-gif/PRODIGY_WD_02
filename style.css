@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(to right, #f6d365, #fda085);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.watch {
+  background-color: rgb(233, 10, 10);
+  color: white;
+  padding: 20px 40px;
+  border-radius: 15px;
+  font-size: 2.5em; 
+  cursor: pointer;
+  width: 80%; 
+  text-align: center;
+  transition: font-size 0.3s, box-shadow 0.3s;
+  max-width: 420px; 
+}
+
+.watch:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.stopwatch {
+  font-weight: 700;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 14px 24px; 
+  font-size: 1.2em; 
+  border: none;
+  border-radius: 7px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: font-size 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+  font-size: 1.5em; 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.start {
+  background-color: green;
+  color: white;
+}
+
+.stop {
+  background-color: black;
+  color: white;
+}
+
+.reset {
+  background-color: blueviolet;
+  color: white;
+}
+
+.lap {
+  background-color: #002cffa1;
+  color: white;
+}
+
+.laps {
+  margin-top: 20px;
+  width: 80%;
+  text-transform: uppercase;
+  text-align: left;
+  max-width: 400px;
+}
+
+.lap-times {
+  list-style: none;
+  padding: 0;
+}
+
+.lap-times li {
+  background-color: black;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 700;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .watch {
+    font-size: 2em; 
+  }
+
+  .btn {
+    font-size: 0.9em; 
+    padding: 8px 16px; 
+  }
+
+  .btn:hover {
+    font-size: 1em; 
+  }
+
+  .laps {
+    width: 90%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .watch {
+    font-size: 1.5em; 
+    padding: 10px 20px; 
+  }
+
+  .btn {
+    font-size: 0.8em; 
+    padding: 6px 12px; 
+  }
+
+  .btn:hover {
+    font-size: 0.9em; 
+  }
+}
